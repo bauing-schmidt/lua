@@ -10,7 +10,7 @@ wget https://www.lua.org/ftp/lua-5.4.4.tar.gz
 tar xfz lua-5.4.4.tar.gz
 cd lua-5.4.4
 
-make mingw || exit /b
+mingw32-make.exe mingw || exit /b
 
 mkdir ..\\bin
 cp src\\*.exe ..\\bin
