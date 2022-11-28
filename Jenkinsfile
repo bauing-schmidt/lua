@@ -4,13 +4,14 @@ try {
 		try {
 			checkout scm
 bat '''
-set PATH=C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin;%PATH%
+
+DOSKEY make = "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"\\mingw32-make.exe
 
 wget https://www.lua.org/ftp/lua-5.4.4.tar.gz
 tar xfz lua-5.4.4.tar.gz
 cd lua-5.4.4
 
-mingw32-make.exe mingw || exit /b
+make mingw || exit /b
 
 mkdir ..\\bin
 cp src\\*.exe ..\\bin
