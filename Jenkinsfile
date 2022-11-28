@@ -4,7 +4,7 @@ try {
 		try {
 			checkout scm
 bat '''
-set PATH="C:\\Program\ Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin";%PATH%
+set PATH="C:\\Program\\ Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin";%PATH%
 
 wget https://www.lua.org/ftp/lua-5.4.4.tar.gz
 tar xfz lua-5.4.4.tar.gz
